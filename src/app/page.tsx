@@ -43,13 +43,24 @@ export default function Home() {
               상담 문의
             </a>
           </div>
-          {/* Mobile phone button */}
-          <a
-            href="tel:010-4336-5498"
-            className="md:hidden btn-gold px-4 py-2 rounded-lg text-sm font-semibold"
-          >
-            전화 문의
-          </a>
+          {/* Mobile buttons */}
+          <div className="md:hidden flex items-center gap-2">
+            <a
+              href="https://blog.naver.com/daechang1111"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass px-3 py-2 rounded-lg text-sm font-medium text-white"
+              aria-label="블로그"
+            >
+              블로그
+            </a>
+            <a
+              href="tel:010-4336-5498"
+              className="btn-gold px-4 py-2 rounded-lg text-sm font-semibold"
+            >
+              전화 문의
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -569,8 +580,9 @@ export default function Home() {
                 <div className="h-48 bg-gradient-to-br from-slate-100 to-slate-50 overflow-hidden">
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={`${item.title} 샘플 제작 사례`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6">
@@ -715,36 +727,151 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-24 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-amber-600 font-semibold text-sm tracking-widest uppercase mb-3">
+              FAQ
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              자주 묻는 질문
+            </h2>
+            <div className="section-divider" />
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "작업지시서가 없어도 제작 가능한가요?",
+                a: "네, 가능합니다. 참고 이미지나 구두 설명만으로도 패턴부터 설계해 드립니다. 디자이너의 의도를 파악해 최적의 결과물을 만들어 드립니다."
+              },
+              {
+                q: "최소 주문 수량이 있나요?",
+                a: "샘플은 1장부터 제작 가능합니다. 소량 생산도 수량 제한 없이 진행합니다. 초기 브랜드, 졸업 작품, 굿즈 제작 모두 환영합니다."
+              },
+              {
+                q: "제작 기간은 얼마나 걸리나요?",
+                a: "작업 난이도와 수량에 따라 다르지만, 일반적인 샘플은 1~2주 내 완성됩니다. 상담 시 정확한 일정을 안내해 드립니다."
+              },
+              {
+                q: "어떤 원단으로 작업 가능한가요?",
+                a: "다이마루와 직기 원단 모두 작업 가능합니다. 고객님이 원단을 직접 준비하셔도 되고, 원단 추천도 해드립니다."
+              },
+              {
+                q: "견적은 어떻게 받나요?",
+                a: "전화(010-4336-5498)로 문의주시면 작업 내용 확인 후 견적을 안내해 드립니다. 작업지시서나 참고 이미지가 있으면 더 정확한 견적이 가능합니다."
+              }
+            ].map((item, idx) => (
+              <details
+                key={idx}
+                className="group bg-slate-50 rounded-xl border border-slate-100 overflow-hidden"
+              >
+                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-100 transition-colors">
+                  <span className="font-semibold text-slate-900 pr-4">{item.q}</span>
+                  <svg
+                    className="w-5 h-5 text-slate-400 flex-shrink-0 group-open:rotate-180 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+                  {item.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Floating CTA Buttons */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a
+          href="tel:010-4336-5498"
+          className="w-14 h-14 bg-amber-500 hover:bg-amber-600 rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
+          aria-label="전화 상담"
+        >
+          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+        </a>
+        <a
+          href="https://blog.naver.com/daechang1111"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
+          aria-label="블로그 방문"
+        >
+          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+        </a>
+      </div>
+
       {/* Footer */}
-      <footer className="py-8 px-4" style={{ background: "#0d0d1a" }}>
+      <footer className="py-12 px-4" style={{ background: "#0d0d1a" }}>
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-center md:text-left">
-              <p className="text-slate-400 text-sm">
-                &copy; 2025 대창실업. All rights reserved.
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            {/* 회사 정보 */}
+            <div>
+              <h4 className="text-white font-bold text-lg mb-4">대창실업</h4>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                40년 경력의 장인이 운영하는<br />
+                패턴 · 샘플 전문 제작소
               </p>
             </div>
-            <div className="flex items-center gap-6">
-              <a
-                href="tel:010-4336-5498"
-                className="text-slate-500 hover:text-amber-400 text-sm transition-colors"
-              >
-                010-4336-5498
-              </a>
-              <span className="text-slate-700">|</span>
-              <span className="text-slate-500 text-sm">
-                서울 도봉구 방학로
-              </span>
-              <span className="text-slate-700">|</span>
-              <a
-                href="https://blog.naver.com/daechang1111"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-500 hover:text-green-400 text-sm transition-colors"
-              >
-                블로그
-              </a>
+            
+            {/* 연락처 */}
+            <div>
+              <h4 className="text-white font-bold text-lg mb-4">연락처</h4>
+              <div className="space-y-2 text-sm">
+                <p className="text-slate-400">
+                  <span className="text-slate-500">전화:</span>{" "}
+                  <a href="tel:010-4336-5498" className="text-amber-400 hover:text-amber-300">
+                    010-4336-5498
+                  </a>
+                </p>
+                <p className="text-slate-400">
+                  <span className="text-slate-500">위치:</span> 서울 도봉구 방학로
+                </p>
+                <p className="text-slate-400">
+                  <span className="text-slate-500">영업시간:</span> 평일 09:00 - 18:00
+                </p>
+              </div>
             </div>
+            
+            {/* 링크 */}
+            <div>
+              <h4 className="text-white font-bold text-lg mb-4">바로가기</h4>
+              <div className="space-y-2 text-sm">
+                <a
+                  href="https://blog.naver.com/daechang1111"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-slate-400 hover:text-green-400 transition-colors"
+                >
+                  네이버 블로그 →
+                </a>
+                <Link
+                  href="/blog"
+                  className="block text-slate-400 hover:text-amber-400 transition-colors"
+                >
+                  제작 사례 보기 →
+                </Link>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-slate-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-slate-500 text-xs">
+              &copy; 2025 대창실업. All rights reserved.
+            </p>
+            <p className="text-slate-600 text-xs">
+              패턴제작 · 샘플제작 · 소량의류생산 전문
+            </p>
           </div>
         </div>
       </footer>

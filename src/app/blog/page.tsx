@@ -96,8 +96,9 @@ export default function BlogPage() {
                 <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 relative overflow-hidden">
                   <img
                     src={post.thumbnail}
-                    alt={post.title}
+                    alt={`${post.title} 샘플 제작 사례`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                   <div className="absolute top-3 left-3">
                     <span className="text-xs font-semibold bg-white/90 text-slate-600 px-3 py-1 rounded-full shadow-sm">
