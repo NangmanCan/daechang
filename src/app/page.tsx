@@ -65,8 +65,13 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero-gradient relative min-h-[70vh] flex items-center justify-center px-4 py-24">
-        <div className="hero-overlay absolute inset-0" />
+      <section className="relative min-h-[70vh] flex items-center justify-center px-4 py-24">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${basePath}/hero.png)` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/80" />
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <div className="animate-fade-in-up">
             <p className="text-amber-400/80 text-sm md:text-base font-medium tracking-[0.3em] uppercase mb-6">
