@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // 나중에 추가: google: "구글서치콘솔인증코드",
+    google: "otT4fcpy8XceWzxXNzH5rPfglrqlFuU5yD3OtWNVQO8",
     // naver: "네이버서치어드바이저인증코드",
   },
   alternates: {
