@@ -133,11 +133,9 @@ export default function Home() {
                 <p className="text-slate-600 leading-relaxed">
                   서울 도봉구 방학로에 위치한 대창실업은{" "}
                   <strong className="text-slate-900">
-                    40년 경력의 재단사 아빠
+                    40년 경력의 장인
                   </strong>
-                  와{" "}
-                  <strong className="text-slate-900">봉제 장인 엄마</strong>가
-                  함께 운영하는 패턴 · 샘플 전문 제작소입니다.
+                  이 운영하는 패턴 · 샘플 전문 제작소입니다.
                 </p>
               </div>
               <div className="gold-border-left pl-6">
@@ -433,36 +431,7 @@ export default function Home() {
             <div className="section-divider" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="glass rounded-2xl p-8 group hover:bg-white/10 transition-all">
-              <div className="w-14 h-14 rounded-xl bg-amber-500/20 flex items-center justify-center mb-5">
-                <svg
-                  className="w-7 h-7 text-amber-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">
-                원단 절약 기술
-              </h3>
-              <p className="text-slate-300 leading-relaxed">
-                mm 단위로 꼼꼼하게 패턴을 배치하여 원단 낭비를 최소화합니다.
-                <br />
-                <span className="text-amber-300/80 font-medium">
-                  원단도 비용입니다.
-                </span>{" "}
-                한 장도 허투루 쓰지 않습니다.
-              </p>
-            </div>
-
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="glass rounded-2xl p-8 group hover:bg-white/10 transition-all">
               <div className="w-14 h-14 rounded-xl bg-amber-500/20 flex items-center justify-center mb-5">
                 <svg
@@ -480,15 +449,15 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-3">
-                손 재단의 정교함
+                ✂️ 손 재단의 정교함
               </h3>
               <p className="text-slate-300 leading-relaxed">
                 레이저 재단은 가장자리가 타거나 변색될 수 있습니다.
                 <br />
                 <span className="text-amber-300/80 font-medium">
-                  손으로 컨트롤하여 자르는 방식
+                  손으로 직접 컨트롤
                 </span>
-                으로 더 정교한 마감을 제공합니다.
+                하여 원단 본연의 깔끔함을 살립니다.
               </p>
             </div>
 
@@ -504,20 +473,20 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={1.5}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                   />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-3">
-                40년 노하우
+                📝 작업지시서 없어도 OK
               </h3>
               <p className="text-slate-300 leading-relaxed">
-                수십 년간 쌓아온 경험으로{" "}
                 <span className="text-amber-300/80 font-medium">
-                  작업지시서를 읽는 눈
-                </span>
-                이 다릅니다. 디테일 하나까지 놓치지 않는 장인 정신으로
-                작업합니다.
+                  이미지 한 장, 말로만 설명해도
+                </span>{" "}
+                괜찮아요.
+                <br />
+                디자이너의 의도를 파악해 직접 패턴부터 설계해드립니다.
               </p>
             </div>
 
@@ -533,19 +502,20 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={1.5}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
                   />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-3">
-                가족 운영의 신뢰
+                👕 1장부터 제작 가능
               </h3>
               <p className="text-slate-300 leading-relaxed">
-                가족이 함께 운영하는 공방이기에{" "}
+                샘플 1장부터 소량 생산까지.
+                <br />
                 <span className="text-amber-300/80 font-medium">
-                  소통이 빠르고 책임감
-                </span>
-                이 남다릅니다. 모든 작업을 직접 확인하고 관리합니다.
+                  초기 브랜드, 졸업 작품, 굿즈 제작
+                </span>{" "}
+                모두 환영합니다.
               </p>
             </div>
           </div>
@@ -575,36 +545,31 @@ export default function Home() {
                 title: "오버핏 맨투맨",
                 tags: ["맨투맨", "오버핏"],
                 desc: "드롭숄더와 박시한 핏, 캥거루 포켓이 포인트",
+                image: "https://blogthumb.pstatic.net/MjAyNjAyMjNfMTA1/MDAxNzcxODQ2NDYyMDg1.FahsN9__sLjdHe9jfYaVRKuaurnMFRJo4yefa3ZvPdgg.ih7EN8cjLRL2ls7n3w3UfkvT1vOV5ejTNCkaIr4nQKMg.JPEG/output%A3%DF1829560600.jpg?type=s3",
               },
               {
                 title: "트레이닝 셋업",
                 tags: ["후드집업", "조거팬츠"],
                 desc: "편안함과 실루엣을 모두 잡은 셋업",
+                image: "https://blogthumb.pstatic.net/MjAyNTExMzBfNzkg/MDAxNzY0NDgzMjUzNzcw.PQiuj-UPxzqF4jUkhWiO07llI9I09oc_WyUBTi1aQXUg.AeAMX-bo0YgHw_s2thKXSLDnR3pYhLUxKSByV2mRbbIg.JPEG/IMG%A3%DF3224.jpg?type=s3",
               },
               {
                 title: "V넥 가디건",
                 tags: ["니트", "가디건"],
                 desc: "깔끔한 핏과 미니멀한 디테일",
+                image: "https://blogthumb.pstatic.net/MjAyNTA5MTlfMTg4/MDAxNzU4MjY4NDA1NDg1.kj249ZYeP-e8gxMNJ5DWnRqIMhgr3eZPT2TKAuoHJMcg._xFheRclrigDXX0NmowleVn_1tPS-vCBmIyaPSAkj2Yg.JPEG/KakaoTalk_20250916_100409697_05.jpg?type=s3",
               },
             ].map((item) => (
               <div
                 key={item.title}
                 className="card-hover bg-white rounded-2xl overflow-hidden border border-slate-100"
               >
-                <div className="h-48 bg-gradient-to-br from-slate-100 to-slate-50 flex items-center justify-center">
-                  <svg
-                    className="w-16 h-16 text-slate-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1}
-                      d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072"
-                    />
-                  </svg>
+                <div className="h-48 bg-gradient-to-br from-slate-100 to-slate-50 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="flex gap-2 mb-3">
