@@ -1,0 +1,16 @@
+# 대창실업 robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nangmancan.github.io/daechang/sitemap.xml
+
+# 검색엔진 크롤러 환영
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Bingbot
+Allow: /

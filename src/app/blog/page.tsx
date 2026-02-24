@@ -1,5 +1,16 @@
 import Link from "next/link";
 import { posts } from "@/data/posts";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "제작 사례",
+  description: "대창실업 의류샘플제작 포트폴리오. 맨투맨, 후드티, 가디건, 원피스, 트레이닝복 등 다양한 샘플제작 사례. 졸업작품, 브랜드런칭 샘플 전문.",
+  keywords: ["의류샘플제작사례", "샘플제작포트폴리오", "맨투맨샘플", "후드티샘플", "가디건샘플"],
+  openGraph: {
+    title: "제작 사례 | 대창실업",
+    description: "40년 장인의 의류샘플제작 포트폴리오. 다양한 제작 사례를 확인하세요.",
+  },
+};
 
 export default function BlogPage() {
   return (
