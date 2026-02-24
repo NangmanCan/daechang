@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const basePath = process.env.NODE_ENV === "production" ? "/daechang" : "";
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -545,19 +547,19 @@ export default function Home() {
                 title: "오버핏 맨투맨",
                 tags: ["맨투맨", "오버핏"],
                 desc: "드롭숄더와 박시한 핏, 캥거루 포켓이 포인트",
-                image: "https://blogthumb.pstatic.net/MjAyNjAyMjNfMTA1/MDAxNzcxODQ2NDYyMDg1.FahsN9__sLjdHe9jfYaVRKuaurnMFRJo4yefa3ZvPdgg.ih7EN8cjLRL2ls7n3w3UfkvT1vOV5ejTNCkaIr4nQKMg.JPEG/output%A3%DF1829560600.jpg?type=s3",
+                image: `${basePath}/samples/mtm.jpg`,
               },
               {
                 title: "트레이닝 셋업",
                 tags: ["후드집업", "조거팬츠"],
                 desc: "편안함과 실루엣을 모두 잡은 셋업",
-                image: "https://blogthumb.pstatic.net/MjAyNTExMzBfNzkg/MDAxNzY0NDgzMjUzNzcw.PQiuj-UPxzqF4jUkhWiO07llI9I09oc_WyUBTi1aQXUg.AeAMX-bo0YgHw_s2thKXSLDnR3pYhLUxKSByV2mRbbIg.JPEG/IMG%A3%DF3224.jpg?type=s3",
+                image: `${basePath}/samples/training.jpg`,
               },
               {
                 title: "V넥 가디건",
                 tags: ["니트", "가디건"],
                 desc: "깔끔한 핏과 미니멀한 디테일",
-                image: "https://blogthumb.pstatic.net/MjAyNTA5MTlfMTg4/MDAxNzU4MjY4NDA1NDg1.kj249ZYeP-e8gxMNJ5DWnRqIMhgr3eZPT2TKAuoHJMcg._xFheRclrigDXX0NmowleVn_1tPS-vCBmIyaPSAkj2Yg.JPEG/KakaoTalk_20250916_100409697_05.jpg?type=s3",
+                image: `${basePath}/samples/cardigan.jpg`,
               },
             ].map((item) => (
               <div
