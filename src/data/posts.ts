@@ -6,8 +6,10 @@ export interface Post {
   category: string;
   tags: string[];
   naverUrl: string;
-  thumbnail?: string;
+  thumbnail: string;
 }
+
+const basePath = process.env.NODE_ENV === "production" ? "/daechang" : "";
 
 export const posts: Post[] = [
   {
@@ -17,7 +19,8 @@ export const posts: Post[] = [
     date: "2026-02-23",
     category: "샘플예시",
     tags: ["맨투맨", "오버핏", "샘플제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/224193120921"
+    naverUrl: "https://blog.naver.com/daechang1111/224193120921",
+    thumbnail: `${basePath}/samples/mtm.jpg`
   },
   {
     id: "eco-bag",
@@ -26,7 +29,8 @@ export const posts: Post[] = [
     date: "2026-02-09",
     category: "대창실업",
     tags: ["에코백", "소량제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/224177123333"
+    naverUrl: "https://blog.naver.com/daechang1111/224177123333",
+    thumbnail: `${basePath}/samples/ecobag.png`
   },
   {
     id: "training-setup",
@@ -35,7 +39,8 @@ export const posts: Post[] = [
     date: "2025-11-30",
     category: "샘플예시",
     tags: ["트레이닝복", "셋업", "후드집업"],
-    naverUrl: "https://blog.naver.com/daechang1111/224093109862"
+    naverUrl: "https://blog.naver.com/daechang1111/224093109862",
+    thumbnail: `${basePath}/samples/training.jpg`
   },
   {
     id: "hand-cutting",
@@ -44,7 +49,8 @@ export const posts: Post[] = [
     date: "2025-10-23",
     category: "대창실업",
     tags: ["재단", "노하우", "강점"],
-    naverUrl: "https://blog.naver.com/daechang1111/224051151323"
+    naverUrl: "https://blog.naver.com/daechang1111/224051151323",
+    thumbnail: `${basePath}/samples/handcut.jpg`
   },
   {
     id: "cardigan",
@@ -53,7 +59,8 @@ export const posts: Post[] = [
     date: "2025-09-23",
     category: "샘플예시",
     tags: ["가디건", "니트", "샘플제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/224019153963"
+    naverUrl: "https://blog.naver.com/daechang1111/224019153963",
+    thumbnail: `${basePath}/samples/cardigan.jpg`
   },
   {
     id: "hoodie",
@@ -62,7 +69,8 @@ export const posts: Post[] = [
     date: "2025-09-19",
     category: "샘플예시",
     tags: ["후드티", "샘플제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/224014368400"
+    naverUrl: "https://blog.naver.com/daechang1111/224014368400",
+    thumbnail: `${basePath}/samples/hoodie.png`
   },
   {
     id: "hood-zip",
@@ -71,7 +79,8 @@ export const posts: Post[] = [
     date: "2025-09-16",
     category: "샘플예시",
     tags: ["후드집업", "샘플제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/224009765197"
+    naverUrl: "https://blog.naver.com/daechang1111/224009765197",
+    thumbnail: `${basePath}/samples/hoodzip.png`
   },
   {
     id: "fabric-saving",
@@ -80,7 +89,8 @@ export const posts: Post[] = [
     date: "2025-09-07",
     category: "대창실업",
     tags: ["원단절약", "노하우", "강점"],
-    naverUrl: "https://blog.naver.com/daechang1111/223998763852"
+    naverUrl: "https://blog.naver.com/daechang1111/223998763852",
+    thumbnail: `${basePath}/samples/fabric.jpg`
   },
   {
     id: "sweatshirt",
@@ -89,7 +99,8 @@ export const posts: Post[] = [
     date: "2025-09-05",
     category: "샘플예시",
     tags: ["맨투맨", "샘플제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/223996538969"
+    naverUrl: "https://blog.naver.com/daechang1111/223996538969",
+    thumbnail: `${basePath}/samples/sweatshirt.png`
   },
   {
     id: "stripe-tshirt",
@@ -98,7 +109,8 @@ export const posts: Post[] = [
     date: "2025-08-26",
     category: "샘플예시",
     tags: ["티셔츠", "스트라이프", "샘플제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/223983560433"
+    naverUrl: "https://blog.naver.com/daechang1111/223983560433",
+    thumbnail: `${basePath}/samples/stripe.jpg`
   },
   {
     id: "check-blouse",
@@ -107,7 +119,8 @@ export const posts: Post[] = [
     date: "2025-08-07",
     category: "샘플예시",
     tags: ["블라우스", "체크", "샘플제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/223962928742"
+    naverUrl: "https://blog.naver.com/daechang1111/223962928742",
+    thumbnail: `${basePath}/samples/check.jpg`
   },
   {
     id: "dress",
@@ -116,6 +129,7 @@ export const posts: Post[] = [
     date: "2025-08-04",
     category: "샘플예시",
     tags: ["원피스", "샘플제작"],
-    naverUrl: "https://blog.naver.com/daechang1111/223958663818"
+    naverUrl: "https://blog.naver.com/daechang1111/223958663818",
+    thumbnail: `${basePath}/samples/dress.jpg`
   }
 ];

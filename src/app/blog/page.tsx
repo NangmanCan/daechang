@@ -81,21 +81,13 @@ export default function BlogPage() {
                 key={post.id}
                 className="card-hover bg-white rounded-2xl overflow-hidden border border-slate-100"
               >
-                {/* Thumbnail placeholder */}
-                <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 flex items-center justify-center relative">
-                  <svg
-                    className="w-14 h-14 text-slate-200"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1}
-                      d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072"
-                    />
-                  </svg>
+                {/* Thumbnail */}
+                <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 relative overflow-hidden">
+                  <img
+                    src={post.thumbnail}
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute top-3 left-3">
                     <span className="text-xs font-semibold bg-white/90 text-slate-600 px-3 py-1 rounded-full shadow-sm">
                       {post.category}
