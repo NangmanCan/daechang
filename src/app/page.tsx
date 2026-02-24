@@ -52,7 +52,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero-gradient relative min-h-screen flex items-center justify-center px-4 pt-20">
+      <section className="hero-gradient relative min-h-[70vh] flex items-center justify-center px-4 py-24">
         <div className="hero-overlay absolute inset-0" />
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <div className="animate-fade-in-up">
