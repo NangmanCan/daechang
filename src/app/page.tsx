@@ -104,10 +104,14 @@ export default function Home() {
           </div>
 
           {/* Stats bar */}
-          <div className="animate-fade-in-up delay-500 mt-20 grid grid-cols-3 gap-4 max-w-xl mx-auto">
+          <div className="animate-fade-in-up delay-500 mt-20 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="stat-number">40+</div>
               <p className="text-slate-400 text-sm mt-1">년 경력</p>
+            </div>
+            <div className="text-center">
+              <div className="stat-number">3~5일</div>
+              <p className="text-slate-400 text-sm mt-1">작업 일자</p>
             </div>
             <div className="text-center">
               <div className="stat-number">1장</div>
@@ -757,7 +761,7 @@ export default function Home() {
               },
               {
                 q: "제작 기간은 얼마나 걸리나요?",
-                a: "작업 난이도와 수량에 따라 다르지만, 일반적인 샘플은 1~2주 내 완성됩니다. 상담 시 정확한 일정을 안내해 드립니다."
+                a: "작업 난이도와 수량에 따라 다르지만, 일반적인 샘플은 3~5일 내 완성됩니다. 상담 시 정확한 일정을 안내해 드립니다."
               },
               {
                 q: "어떤 원단으로 작업 가능한가요?",
